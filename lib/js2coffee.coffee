@@ -1,0 +1,16 @@
+Js2Coffee = require('js2coffee');
+
+RangeFinder = require './range-finder'
+
+module.exports =
+  activate: ->
+    atom.workspaceView.command 'js2coffee:toggle', '.editor', =>
+      editor = atom.workspaceView.getActivePaneItem()
+      @convert(editor)
+
+  convert: (editor) ->
+    ranges = RangeFinder.rangesFor(editor)
+    ranges.forEach (range) =>
+      jsContent = editor.getTextInBufferRange(range)
+      coffeeContent = Js2Coffee.build(jsContent, {indent: editor.getTabText()});
+      editor.setTextInBufferRange(range, coffeeContent)

@@ -1,0 +1,16 @@
+{
+  "name": "js2coffee",
+  "main": "./lib/js2coffee",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Convert javascript selections into coffeescript",
+  "activationEvents": ["js2coffee:toggle"],
+  "repository": "https://github.com/atom/js2coffee",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {
+    "js2coffee": "*"
+  }
+}
