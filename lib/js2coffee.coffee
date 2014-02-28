@@ -12,5 +12,8 @@ module.exports =
     ranges = RangeFinder.rangesFor(editor)
     ranges.forEach (range) =>
       jsContent = editor.getTextInBufferRange(range)
-      coffeeContent = Js2Coffee.build(jsContent, {indent: editor.getTabText()});
-      editor.setTextInBufferRange(range, coffeeContent)
+      try
+        coffeeContent = Js2Coffee.build(jsContent, {indent: editor.getTabText()});
+        editor.setTextInBufferRange(range, coffeeContent)
+      catch e
+        console.error("invalid javascript")
