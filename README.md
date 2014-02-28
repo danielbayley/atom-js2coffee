@@ -6,4 +6,4 @@ Allows you to use Js2Coffee on selections of text
 
 installation: apm install js2coffee
 
-![js2coffee gif](js2coffee.gif)
+![js2coffee gif](https://raw.github.com/Chandler/atom-js2coffee/master/js2coffee.gif)
