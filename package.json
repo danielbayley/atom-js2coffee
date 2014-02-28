@@ -5,7 +5,7 @@
   "private": true,
   "description": "Convert javascript selections into coffeescript",
   "activationEvents": ["js2coffee:toggle"],
-  "repository": "https://github.com/atom/js2coffee",
+  "repository": "https://github.com/Chandler/atom-js2coffee",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
