@@ -1,7 +1,7 @@
 {
   "name": "js2coffee",
   "main": "./lib/js2coffee",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "private": true,
   "description": "convert javascript file or selected lines into coffeescript",
   "activationEvents": [
