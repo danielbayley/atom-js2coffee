@@ -6,7 +6,9 @@ Atom.io wrapper around the wonderful https://github.com/js2coffee/js2coffee
 * Correctly reads your tab length from your atom preferences
 * Has a gif in the readme
 
-installation: apm install js2coffee
+installation: 
+ npm install -g js2coffee
+ apm install js2coffee
 
 If you try to convert invalid javscript it will write an error the atom js console, TODO: throw a more useful error popup
 
