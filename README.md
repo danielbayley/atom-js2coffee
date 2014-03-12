@@ -1,7 +1,7 @@
 # js2coffee package
 
 
-!!!  2014-02-12 This plugin is broken on the newest version of atom !!!
+!!!  2014-03-12 This plugin is broken on the newest version of atom !!!
 http://discuss.atom.io/t/atom-content-security-policy-error/4425
 
 Atom.io wrapper around the wonderful https://github.com/js2coffee/js2coffee
