@@ -1,5 +1,9 @@
 # js2coffee package
 
+
+!!!  2014-02-12 This plugin is broken on the newest version of atom !!!
+http://discuss.atom.io/t/atom-content-security-policy-error/4425
+
 Atom.io wrapper around the wonderful https://github.com/js2coffee/js2coffee
 
 * Allows you to use Js2Coffee on selections of text
