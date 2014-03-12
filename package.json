@@ -13,6 +13,6 @@
     "atom": ">0.50.0"
   },
   "dependencies": {
-    "js2coffee": "*"
+    "js2coffee": "~0.2.7"
   }
 }
