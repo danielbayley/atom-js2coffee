@@ -13,7 +13,7 @@
     "atom": ">0.50.0"
   },
   "dependencies": {
-    "js2coffee": "~0.2.7",
+    "js2coffee": "~2.0.4",
     "loophole": "^1.0.0"
   }
 }
