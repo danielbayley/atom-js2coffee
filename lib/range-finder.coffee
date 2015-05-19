@@ -22,7 +22,8 @@ class RangeFinder
 
   # Internal
   selectionRanges: ->
-    @editor.getSelectedBufferRanges().filter (range) ->
+    selectedRanges = @editor.getSelectedBufferRanges()
+    selectedRanges.filter (range) ->
       not range.isEmpty()
 
   # Internal
