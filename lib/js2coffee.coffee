@@ -4,22 +4,24 @@ Js2Coffee = allowUnsafeEval -> require('js2coffee')
 {MessagePanelView, LineMessageView} = require 'atom-message-panel'
 
 RangeFinder = require './range-finder'
-workspace = atom.workspace
-commands  = atom.commands
+#workspace = atom.workspace, it is not ready here!
+#commands  = atom.commands
 messages  = null
 
 module.exports =
   activate: ->
     #atom.workspaceView.command 'js2coffee:toggle', '.editor', =>
-    commands.add 'atom-workspace',
-      'js2coffee:toggle': (event) ->
-        editor = workspace.getActiveTextEditor()
+    @commands = atom.commands.add 'atom-workspace',
+      'js2coffee:convert': (e) ->
+        editor = atom.workspace.getActiveTextEditor()
         convertJs(editor)
     messages = new MessagePanelView
       title: 'js2coffee'
       recentMessagesAtTop: true
     messages.attach()
     #messages.toggle() # Fold the panel
+  deactivate: ->
+    @commands.dispose()
 
   convert: convertJs = (editor) ->
     messages.clear()
@@ -48,3 +50,4 @@ module.exports =
               #preview: e.sourcePreview
         if result.code
           editor.setTextInBufferRange(range, result.code)
+        console.log result
