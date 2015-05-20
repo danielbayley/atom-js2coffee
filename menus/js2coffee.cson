@@ -12,6 +12,7 @@
       'label': 'js2coffee'
       'submenu': [
         { 'label': 'Convert', 'command': 'js2coffee:convert' }
+        { 'label': 'Toggle Message Panel', 'command': 'js2coffee:messages' }
       ]
     ]
   }
