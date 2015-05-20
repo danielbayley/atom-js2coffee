@@ -7,5 +7,5 @@
 
 # For more detailed documentation see
 # https://atom.io/docs/latest/advanced/keymaps
-'.workspace':
-  'ctrl-alt-o': 'js2coffee:toggle'
+'atom-text-editor':
+  'ctrl-alt-o': 'js2coffee:convert'

@@ -1,7 +1,9 @@
 # See https://atom.io/docs/latest/creating-a-package#menus for more details
 'context-menu':
-  '.overlayer':
-      'Enable js2coffee': 'js2coffee:toggle'
+  'atom-workspace': [
+    label: 'js2coffee'
+    'command': 'js2coffee:convert'
+  ]
 
 'menu': [
   {
@@ -9,7 +11,7 @@
     'submenu': [
       'label': 'js2coffee'
       'submenu': [
-        { 'label': 'Toggle', 'command': 'js2coffee:toggle' }
+        { 'label': 'Convert', 'command': 'js2coffee:convert' }
       ]
     ]
   }

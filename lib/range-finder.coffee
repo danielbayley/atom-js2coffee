@@ -22,7 +22,8 @@ class RangeFinder
 
   # Internal
   selectionRanges: ->
-    @editor.getSelectedBufferRanges().filter (range) ->
+    selectedRanges = @editor.getSelectedBufferRanges()
+    selectedRanges.filter (range) ->
       not range.isEmpty()
 
   # Internal
@@ -37,6 +38,7 @@ class RangeFinder
       selectionRange.end.row - 1
     else
       selectionRange.end.row
-    endCol = @editor.lineLengthForBufferRow(endRow)
+    endCol = @editor.lineTextForBufferRow(endRow).length
+    #endCol = @editor.lineLengthForBufferRow(endRow)
 
     new Range [startRow, startCol], [endRow, endCol]
