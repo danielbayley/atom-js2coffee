@@ -1,6 +1,3 @@
-As evidenced by the bugs section, this plugin does not work anymore. It used to work, now it doesn't. I don't use atom any more so I haven't looked to see what's wrong. Pull requests welcome. I also have no idea how to remove this from the atom pacakages store tbh. Sorry, I'm the worst.
-
-with love - @cba
 
 # js2coffee package
 
