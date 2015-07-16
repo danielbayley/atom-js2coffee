@@ -8,6 +8,11 @@ RangeFinder = require './range-finder'
 #commands  = atom.commands
 messages  = null
 
+newMessagePanelView = ->
+  messages = new MessagePanelView
+    title: 'js2coffee'
+    recentMessagesAtTop: true
+
 module.exports =
   activate: ->
     #atom.workspaceView.command 'js2coffee:toggle', '.editor', =>
@@ -15,13 +20,17 @@ module.exports =
       'js2coffee:convert': (e) ->
         editor = atom.workspace.getActiveTextEditor()
         convertJs(editor)
-    messages = new MessagePanelView
-      title: 'js2coffee'
-      recentMessagesAtTop: true
-    messages.attach()
-    #messages.toggle() # Fold the panel
+      'js2coffee:messages': (e) ->
+        if messages.panel? and messages.panel.isVisible()
+          messages.close()
+        else
+          messages.attach()
+    newMessagePanelView()
   deactivate: ->
     @commands.dispose()
+    if messages
+      messages.dispose()
+      messages = null
 
   convert: convertJs = (editor) ->
     messages.clear()
@@ -50,4 +59,6 @@ module.exports =
               #preview: e.sourcePreview
         if result.code
           editor.setTextInBufferRange(range, result.code)
-        console.log result
+    if not (messages.panel? and messages.panel.isVisible()) and
+       messages.messages.length
+      messages.attach()
