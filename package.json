@@ -4,15 +4,15 @@
   "version": "0.16.3",
   "private": true,
   "description": "Convert selected lines or an entire file into coffeescript.",
-  "repository": "https://github.com/Chandler/atom-js2coffee",
+  "repository": "https://github.com/jdcrensh/atom-js2coffee",
   "license": "MIT",
   "engines": {
     "atom": ">=0.188.0 <2.0.0"
   },
   "dependencies": {
-    "atom-message-panel": "^1.2.4",
+    "atom-message-panel": "~1.2.4",
     "js2coffee": "~2.2.0",
-    "loophole": "^1.0.0"
+    "loophole": "~1.0.0"
   },
   "devDependencies": {
     "temp": "~0.8.1"
