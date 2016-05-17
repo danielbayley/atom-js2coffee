@@ -1,20 +1,19 @@
-fs              = require 'fs'
-path            = require 'path'
-temp            = require 'temp'
+fs = require 'fs'
+path = require 'path'
+temp = require 'temp'
 
-Js2coffee       = require '../lib/js2coffee'
-helper          = require './spec-helper'
+Js2coffee = require '../lib/js2coffee'
+helper = require './spec-helper'
 
 # Use the command `window:run-package-specs` (cmd-alt-ctrl-p) to run specs.
 #
 # To run a specific `it` or `describe` block add an `f` to the front (e.g. `fit`
 # or `fdescribe`). Remove the `f` to unfocus the block.
 
-describe "Js2coffee", ->
+describe 'Js2coffee', ->
   #activationPromise = null
   [buffer, directory, editor, filePath, workspaceElement, activationPromise] = []
   editorView = null
-
 
   beforeEach ->
     expect(atom.packages.isPackageActive('js2coffee')).toBe false

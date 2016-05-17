@@ -2,8 +2,7 @@
 
 #stolen from: https://github.com/atom/sort-lines/blob/master/lib/range-finder.coffee
 
-module.exports =
-class RangeFinder
+module.exports = class RangeFinder
   # Public
   @rangesFor: (editor) ->
     new RangeFinder(editor).ranges()
@@ -17,14 +16,12 @@ class RangeFinder
     if selectionRanges.length is 0
       [@sortableRangeForEntireBuffer()]
     else
-      selectionRanges.map (selectionRange) =>
-        @sortableRangeFrom(selectionRange)
+      selectionRanges.map @sortableRangeFrom
 
   # Internal
   selectionRanges: ->
     selectedRanges = @editor.getSelectedBufferRanges()
-    selectedRanges.filter (range) ->
-      not range.isEmpty()
+    selectedRanges.filter (range) -> not range.isEmpty()
 
   # Internal
   sortableRangeForEntireBuffer: ->
@@ -34,7 +31,7 @@ class RangeFinder
   sortableRangeFrom: (selectionRange) ->
     startRow = selectionRange.start.row
     startCol = 0
-    endRow = if selectionRange.end.column == 0
+    endRow = if selectionRange.end.column is 0
       selectionRange.end.row - 1
     else
       selectionRange.end.row

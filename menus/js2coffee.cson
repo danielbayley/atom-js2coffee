@@ -4,16 +4,13 @@
     label: 'js2coffee'
     'command': 'js2coffee:convert'
   ]
-
-'menu': [
-  {
-    'label': 'Packages'
+'menu': [{
+  'label': 'Packages'
+  'submenu': [
+    'label': 'js2coffee'
     'submenu': [
-      'label': 'js2coffee'
-      'submenu': [
-        { 'label': 'Convert', 'command': 'js2coffee:convert' }
-        { 'label': 'Toggle Message Panel', 'command': 'js2coffee:messages' }
-      ]
+      {'label': 'Convert', 'command': 'js2coffee:convert'}
+      {'label': 'Toggle Message Panel', 'command': 'js2coffee:messages'}
     ]
-  }
-]
+  ]
+}]

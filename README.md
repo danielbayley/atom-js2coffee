@@ -19,3 +19,9 @@ Atom.io wrapper around [js2coffee](https://github.com/js2coffee/js2coffee)
 ## Installation
 
 Install 'js2coffee' via Atom's settings UI, or run `apm install js2coffee`
+
+## Contributing
+
+Fork this repo, make your commit, and open a pull request. Squash as many commits as possible.
+
+Your PR must pass all tests before it will be merged. This includes passing the coffeescript linter [rules](./coffeelint.json).
