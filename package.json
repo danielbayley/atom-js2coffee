@@ -1,7 +1,7 @@
 {
   "name": "js2coffee",
   "main": "./lib/js2coffee",
-  "version": "0.18.0",
+  "version": "0.18.1",
   "private": true,
   "description": "Convert selected lines or an entire file into coffeescript.",
   "repository": "https://github.com/jdcrensh/atom-js2coffee",
