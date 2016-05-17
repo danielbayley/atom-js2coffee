@@ -7,7 +7,7 @@
   "repository": "https://github.com/jdcrensh/atom-js2coffee",
   "license": "MIT",
   "engines": {
-    "atom": ">=0.188.0 <2.0.0"
+    "atom": "*"
   },
   "dependencies": {
     "atom-message-panel": "~1.2.4",

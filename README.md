@@ -1,15 +1,21 @@
 
-# js2coffee package
+# js2coffee package for Atom
 
-Atom.io wrapper around the wonderful https://github.com/js2coffee/js2coffee
+[![Travis](https://img.shields.io/travis/jdcrensh/atom-js2coffee.svg)](https://travis-ci.org/jdcrensh/atom-js2coffee)
+[![CircleCI](https://img.shields.io/circleci/project/jdcrensh/atom-js2coffee.svg)](https://circleci.com/gh/jdcrensh/atom-js2coffee)
+[![AppVeyor](https://ci.appveyor.com/api/projects/status/9klcrhye8alqfogt?svg=true)](https://ci.appveyor.com/project/jdcrensh/atom-js2coffee)
 
-* Allows you to use Js2Coffee on selections of text
-* Correctly reads your tab length from your atom preferences
-* Has a gif in the readme
 
-installation: 
-apm install js2coffee
-
-If you try to convert invalid javscript it will write an error the atom js console, TODO: throw a more useful error popup
+Atom.io wrapper around [js2coffee](https://github.com/js2coffee/js2coffee)
 
 ![js2coffee gif](https://raw.github.com/Chandler/atom-js2coffee/master/js2coffee.gif)
+
+## Features
+
+* Allows you to use js2coffee on whole files or selected text
+* Uses tab length from your Atom preferences
+* Reports js2coffee errors using Atom's js console
+
+## Installation
+
+Install 'js2coffee' via Atom's settings UI, or run `apm install js2coffee`
