@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "atom-message-panel": "^1.2.4",
-    "js2coffee": "~2.1.0",
+    "js2coffee": "~2.2.0",
     "loophole": "^1.0.0"
   },
   "devDependencies": {
