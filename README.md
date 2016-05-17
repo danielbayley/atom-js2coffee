@@ -1,6 +1,7 @@
-
 # js2coffee package for Atom
 
+[![apm](https://img.shields.io/apm/v/js2coffee.svg)](https://atom.io/packages/js2coffee)
+[![apm](https://img.shields.io/apm/dm/js2coffee.svg)](https://atom.io/packages/js2coffee)
 [![Travis](https://img.shields.io/travis/jdcrensh/atom-js2coffee.svg)](https://travis-ci.org/jdcrensh/atom-js2coffee)
 [![CircleCI](https://img.shields.io/circleci/project/jdcrensh/atom-js2coffee.svg)](https://circleci.com/gh/jdcrensh/atom-js2coffee)
 [![AppVeyor](https://ci.appveyor.com/api/projects/status/9klcrhye8alqfogt?svg=true)](https://ci.appveyor.com/project/jdcrensh/atom-js2coffee)
