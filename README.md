@@ -23,6 +23,6 @@ Install 'js2coffee' via Atom's settings UI, or run `apm install js2coffee`
 
 ## Contributing
 
-Fork this repo, make your commit, and open a pull request. Squash as many commits as possible.
+Pull requests are very much welcome. Fork, make your commit, and open a pull request.
 
-Your PR must pass all tests before it will be merged. This includes passing the coffeescript linter [rules](./coffeelint.json).
+The PR should pass all builds before it can be merged, including linter [rules](./coffeelint.json).
