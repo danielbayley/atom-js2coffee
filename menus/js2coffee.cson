@@ -1,6 +1,7 @@
 # See https://atom.io/docs/latest/creating-a-package#menus for more details
 'context-menu':
-  'atom-workspace': [
+  'atom-text-editor:not([mini])[data-grammar*="js"], [data-grammar*="coffee"],
+  .tree-view .file [title*=".js"]': [
     label: 'js2coffee'
     'command': 'js2coffee:convert'
   ]
