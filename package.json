@@ -6,6 +6,10 @@
   "description": "Convert selected lines or an entire file into coffeescript.",
   "repository": "https://github.com/jdcrensh/atom-js2coffee",
   "license": "MIT",
+  "author": "Chandler Abraham <cbabraham@gmail.com>",
+  "contributors": [
+    "Jon Crenshaw <jdcrensh@gmail.com>"
+  ],
   "engines": {
     "atom": "*"
   },
