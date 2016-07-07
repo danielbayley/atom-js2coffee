@@ -1,25 +1,33 @@
 {
-  "name": "js2coffee",
-  "main": "./lib/js2coffee",
+  "name": "transpile-js2coffee",
   "version": "0.19.1",
   "private": true,
-  "description": "Convert selected lines or an entire file into coffeescript.",
-  "repository": "https://github.com/jdcrensh/atom-js2coffee",
+  "description": "JavaScript to CoffeeScript provider for atom-transpile.",
+  "repository": "https://github.com/jdcrensh/atom-transpile-js2coffee",
   "license": "MIT",
   "author": "Chandler Abraham <cbabraham@gmail.com>",
   "contributors": [
-    "Jon Crenshaw <jdcrensh@gmail.com>"
+    "Jon Crenshaw <jdcrensh@gmail.com>",
+    "Daniel Bayley <daniel.bayley@me.com> (https://github.com/danielbayley)"
   ],
-  "engines": {
-    "atom": "*"
+  "devDependencies": {
+    "coffeelint": "^1.15.7"
   },
   "dependencies": {
-    "atom-message-panel": "~1.2.4",
     "js2coffee": "~2.2.0",
     "loophole": "~1.0.0"
   },
-  "devDependencies": {
-    "coffeelint": "^1.15.7",
-    "temp": "~0.8.1"
+  "scripts": {
+    "preinstall": "apm install transpile"
+  },
+  "engines": {
+    "atom": "*"
+  },
+  "providedServices": {
+    "transpile": {
+      "versions": {
+        "1.0.0": "activate"
+      }
+    }
   }
 }

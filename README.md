@@ -1,28 +1,28 @@
-# js2coffee package for Atom
+# Atom _[js2coffee]_
 
-[![apm](https://img.shields.io/apm/v/js2coffee.svg)](https://atom.io/packages/js2coffee)
-[![apm](https://img.shields.io/apm/dm/js2coffee.svg)](https://atom.io/packages/js2coffee)
-[![Travis](https://img.shields.io/travis/jdcrensh/atom-js2coffee.svg)](https://travis-ci.org/jdcrensh/atom-js2coffee)
-[![CircleCI](https://img.shields.io/circleci/project/jdcrensh/atom-js2coffee.svg)](https://circleci.com/gh/jdcrensh/atom-js2coffee)
-[![AppVeyor](https://ci.appveyor.com/api/projects/status/9klcrhye8alqfogt?svg=true)](https://ci.appveyor.com/project/jdcrensh/atom-js2coffee)
+[![apm]](https://atom.io/packages/transpile-js2coffee)
+[![downloads]](https://atom.io/packages/transpile-js2coffee)
 
+Transpile JavaScript to [CoffeeScript] in [Atom] with _[js2coffee]_.
 
-Atom.io wrapper around [js2coffee](https://github.com/js2coffee/js2coffee)
-
-![js2coffee gif](https://raw.github.com/jdcrensh/atom-js2coffee/master/js2coffee.gif)
-
-## Features
-
-* Allows you to use js2coffee on whole files or selected text
-* Uses tab length from your Atom preferences
-* Reports js2coffee errors using Atom's js console
+[Another] plugin for _[atom-transpile]_.
 
 ## Installation
 
-Install 'js2coffee' via Atom's settings UI, or run `apm install js2coffee`
+`apm install transpile-js2coffee` or search “js2coffee” under Packages within Atom.
 
-## Contributing
+## License
 
-Pull requests are very much welcome. Fork, make your commit, and open a pull request.
+[MIT] © [Jon Crenshaw] et [al]
 
-The PR should pass all builds before it can be merged, including linter [rules](./coffeelint.json).
+[MIT]:								LICENSE.md
+[Jon Crenshaw]:				https://github.com/jdcrensh
+[al]:									https://github.com/jdcrensh/atom-transpile-js2coffee/graphs/contributors
+[atom]:								https://atom.io
+[apm]:                https://img.shields.io/apm/v/transpile-js2coffee.svg?style=flat-square
+[downloads]:					https://img.shields.io/apm/dm/transpile-js2coffee.svg?style=flat-square
+
+[atom-transpile]:			https://atom.io/packages/transpile
+[Another]:            https://atom.io/packages/search?q=transpile-
+[CoffeeScript]:				http://coffeescript.org
+[js2coffee]:					http://js2.coffee
